@@ -3,3 +3,11 @@ __pycache__/
 db.sqlite3
 .env
 .venv/
+
+# Ignore all in the images
+static/images/*
+
+# Except the default avatar image
+!static/images/avatar.png
+
+.env
