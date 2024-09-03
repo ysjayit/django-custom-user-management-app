@@ -13,7 +13,20 @@ Custom user management application
 git clone https://github.com/ysjayit/django-custom-user-management-app.git
 cd django-custom-user-management-app
 ```
-2. **Create and Activate a Virtual Environment (optional but recommended)**:
+2. **Environment Setup**:
+- Copy .env.example to .env:
+```shell
+cp .env.example .env
+```
+- Edit .env and configure the database parameters: Open the .env file and set your database configuration for MySQL:
+```shell
+DB_DATABASE=your_database_name
+DB_USERNAME=your_database_user
+DB_PASSWORD=your_database_password
+DB_HOST=localhost
+DB_PORT=your_database_port
+```
+3. **Create and Activate a Virtual Environment (optional but recommended)**:
 If virtualenv is not installed yet, you can install it via pip:
 ```shell
 pip install virtualenv
@@ -31,11 +44,11 @@ source [ENVIRONMENT NAME]/bin/activate
 ```shell
 .\[ENVIRONMENT NAME]\Scripts\activate
 ```
-3. **Install Dependencies**:
+4. **Install Dependencies**:
 ```shell
 pip install -r requirements.txt
 ```
-4. **Running the application**:
+5. **Running the application**:
 ```shell
 python manage.py runserver
 ```
